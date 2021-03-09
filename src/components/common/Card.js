@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Loader from '../loader/Loader.js';
+import Tabs from '../common/Tabs.js';
 
 const useStyles = makeStyles({
   root: {
@@ -23,8 +24,8 @@ const useStyles = makeStyles({
     }
   },
   content: {
-    minHeight: 400,
     height: 'fit-content',
+    padding: 0
   },
   footer: {
     height: 'fit-content',
@@ -70,13 +71,14 @@ function CardComponent(props) {
         avatar={<ArrowBackIosIcon className={classes.avatar}/>}
         onClick={onClick}
       />
-      <hr/>
-      <CardContent className={classes.content}>
-        {props.children}
-      </CardContent>
-      <CardActions className={classes.footer}>
-        {cardActions}
-      </CardActions>
+      <Tabs>
+        <CardContent className={classes.content}>
+          {props.children}
+        </CardContent>
+        <CardActions className={classes.footer}>
+          {cardActions}
+        </CardActions>
+      </Tabs>
     </Card>
   );
 }

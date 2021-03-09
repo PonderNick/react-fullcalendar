@@ -341,7 +341,7 @@ class Calendar extends Component {
         <Sidebar open={sideBar}>
           { sideBar === true &&
           <Card 
-            title='Event Details'
+            title=''
             variant='elevation'
             onClick={this.closeSideBar}
             loading={loading}
