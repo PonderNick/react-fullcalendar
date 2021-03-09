@@ -1,0 +1,11 @@
+.container-open-sidebar {
+  float: right;
+  height: 100%;
+  width: 30%;
+  background-color: 'whitesmoke';
+}
+
+.container-closed-sidebar {
+  display: none;
+  width: 0%;
+}

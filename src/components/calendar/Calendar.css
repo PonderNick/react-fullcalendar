@@ -1,0 +1,59 @@
+.calendar-main-container {
+  height: 100%;
+  width: 100%;
+}
+
+.reduced-container-calendar {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+
+.container-calendar {
+  height: 100%;
+  width: 100%;
+}
+
+.fc-toolbar-title {
+  font-weight: 400;
+}
+
+.dates-container {
+  width: 100%;
+}
+
+.start-date {
+  float: left;
+  margin-right: 10%;
+  width: 45%;
+}
+
+.end-date {
+  float: left;
+  width: 45%;
+}
+
+.fc .fc-button-primary {
+  color: #FFFFFF;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.fc .fc-button-primary:not(:disabled):active, .fc .fc-button-primary:not(:disabled).fc-button-active {
+  color: #FFFFFF;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.fc .fc-button-primary:disabled {
+  color: #FFFFFF;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.fc .fc-button-primary:hover {
+  opacity: 0.8;
+  color: #FFFFFF;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
